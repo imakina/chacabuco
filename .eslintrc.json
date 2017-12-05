@@ -1,0 +1,41 @@
+{
+    "parser"  : "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "extends" : [
+      "standard",
+      "standard-react"
+    ],
+    "plugins": [
+      "babel",
+      "react"
+    ],
+    "env"     : {
+      "browser": true,
+      "commonjs": true,
+      "es6": true
+    },
+    "rules": {
+      "react/jsx-no-bind": [1, {
+        "allowArrowFunctions": true
+      }],
+      "react/jsx-max-props-per-line": [1, { "maximum": 1 }],
+      "react/jsx-closing-bracket-location": [1],
+      "react/jsx-wrap-multilines": [1],
+      "react/jsx-indent-props": [2, 2],
+      "react/jsx-indent": [2, 2],
+      "operator-linebreak": [0],
+      "semi" : [2, "never"],
+      "max-len": ["warn", { "code": 120, "tabWidth": 2}],
+      "generator-star-spacing": ["error", "after"],
+      "no-unused-vars": ["warn"],
+      "no-trailing-spaces": ["warn"],
+      "no-multiple-empty-lines": ["warn"]
+    }
+  }
+  
