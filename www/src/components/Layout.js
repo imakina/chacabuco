@@ -9,7 +9,6 @@ const main = {
   marginTop : 30
 }
 
-
 const Layout = (props) => (
   <div style={layout}>
     <Header />

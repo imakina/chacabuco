@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom"
-//redux
-import { Provider } from "react-redux" //← Bridge React and Redux
-import reducers from "./reducers" // ← List of Reducers we created 
-
+import { Provider } from "react-redux" 
 import App from "./pages/App";
+
 import "./index.css";
 import "./semantic/dist/semantic.min.css";
 

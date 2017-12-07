@@ -11,6 +11,9 @@
     "redux": "^3.7.2",
     "semantic-ui-react": "^0.77.0"
   },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
