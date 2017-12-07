@@ -2,38 +2,26 @@ import React from 'react';
 import {
   NavLink
 } from "react-router-dom";
+import { Images } from "../themes/"
 
-const linkStyle = {
-  marginRight: 15
+const container = {
+  marginTop: 15,
 }
 
-
 const Header = () => (
-  // <nav className="ui fixed top menu navbar">
-  //   <div className="ui container">
-  //     <NavLink to="/" className="brand item" >Chacabuco</NavLink>
-  //     <NavLink to="/products" className="active item">Products</NavLink>
-  //     <NavLink to="/about" className="item">About</NavLink>
-  //   </div>
-  // </nav>
-
-  <div class="ui vertical center aligned">
-    <div class="ui container">
-      <div class="ui pointing tabular menu">
-        <NavLink to="/" className="brand item">
-          <img class="logo" src="6594867.jpg" />
-        </NavLink>
-        <NavLink to="/invoice" className="item">Invoices</NavLink>
-        <NavLink to="/combos" className="item">Combos</NavLink>
-        <NavLink to="/products" className="item">Products</NavLink>
-        {/* <div class="right item">
-          <a class="ui button" role="button">Log in</a>
-          <a class="ui button" role="button">Sign Up</a>
-        </div> */}
+  <nav className="ui pointing tabular menu" style={container}>
+    <div className="ui container">
+      <NavLink to="/" className="brand item" >
+        <img className="logo" src={Images.logo} alt="logo"/>
+      </NavLink>
+      <NavLink to="/invoice" className="item">Invoices</NavLink>
+      <NavLink to="/combos" className="item">Combos</NavLink>
+      <NavLink to="/products" className="item">Products</NavLink>
+      <div className="right item">
+        <NavLink to="/signin" role="button"> Log in</NavLink>
       </div>
     </div>
-  </div>
-
+  </nav>
 
 )
 

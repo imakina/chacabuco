@@ -1,16 +1,21 @@
 import React from 'react';
-// import Header from './Header'
+import Header from './Header'
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
+const layout = {
+
 }
 
+const main = {
+  marginTop : 30
+}
+
+
 const Layout = (props) => (
-  <div style={layoutStyle}>
-    {/* <Header /> */}
-    {props.children}
+  <div style={layout}>
+    <Header />
+    <div className="ui container" style={main}>
+        {props.children}
+    </div>
   </div>
 )
 

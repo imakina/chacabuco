@@ -1,23 +1,16 @@
 import React, { Component } from "react";
 
-import Header from '../components/Header'
-import Routes from '../components/Routes'
-
-const divStyle = {
-  marginTop: 30
-}
+import Layout from '../components/Layout'
+import Routes from '../routes'
 
 class App extends Component {
 
   render() {
 
     return (
-        <div>
-          <Header />
-          <div className="ui container" style={divStyle}>
-            <Routes />
-          </div>
-          </div>
+      <Layout>
+        <Routes />
+      </Layout>
     );
   }
 }

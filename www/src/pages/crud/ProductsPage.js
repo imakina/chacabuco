@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-class Invoice extends Component {
+class Products extends Component {
 
   render() {
 
     return (
       <div>
-        <h1 className="ui header">Invoice</h1>
+        <h1 className="ui header">Products</h1>
         <div className="ui container stackable two column grid">
             <div className="column">
             <p> select product </p>
@@ -20,4 +20,4 @@ class Invoice extends Component {
   }
 }
 
-export default Invoice;
+export default Products;
