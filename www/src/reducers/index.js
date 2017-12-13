@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import products from './productReducers'
+// import products from './productRedux'
 
 export default combineReducers({
-    products: products,
+    product: require('./productRedux').reducer,
   // More reducers if there are
   // can go here
 });

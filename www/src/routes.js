@@ -6,7 +6,7 @@ import {
 
 import Main from "./pages/Main";
 import Combos from "./pages/crud/CombosPage";
-import Products from "./pages/crud/ProductsPage";
+import Products from "./pages/crud/products/ProductsIndex";
 import Invoice from "./pages/Invoice";
 
 const Routes = () => (

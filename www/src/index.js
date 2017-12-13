@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom"
 import { Provider } from "react-redux" 
+// import reducer from './reducers';
+// import registerServiceWorker from './registerServiceWorker';
 import App from "./pages/App";
 
 import "./index.css";
 import "./semantic/dist/semantic.min.css";
 
-import configureStore from "./store/configureStore";
+import configureStore from './store/configureStore';
 const store = configureStore();
 
 ReactDOM.render((
